@@ -1,0 +1,23 @@
+@import 'src/common/style/mixins';
+
+.wrapper {
+  height: 100%;
+  @include flex(space-between, center, column);
+
+  .header {
+    width: 100%;
+    @include flex(space-between, center);
+  }
+
+  .button {
+    align-self: flex-end
+  }
+
+  & p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333333;
+  }
+
+}
