@@ -2,7 +2,7 @@
   "name": "cloud-camp-test",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://yanakorobova.github.io/cloud-camp-test",
+  "homepage": "https://yanakorobova.github.io/cloud-camp-test",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.14.1",
@@ -16,8 +16,7 @@
     "antd-mask-input": "^2.0.7",
     "axios": "^1.4.0",
     "formik": "^2.4.2",
-    "gh": "^2.8.9",
-    "pages": "^0.0.16",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-imask": "^6.6.3",
