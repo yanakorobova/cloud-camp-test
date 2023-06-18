@@ -2,6 +2,7 @@
   "name": "cloud-camp-test",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://yanakorobova.github.io/cloud-camp-test",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.14.1",
