@@ -1,0 +1,29 @@
+@import "src/common/style/variables";
+
+@font-face {
+  font-family: "SB Sans Interface";
+  src: url("common/assets/fonts/SB-Sans-Interface.ttf") format("truetype");
+}
+
+* {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #F4F4F5;
+  min-width: $minWidthScreen;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "SB Sans Interface", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media screen and (max-width: 750px) {
+    background: white;
+  }
+}
+
+label {
+  color: #333333;
+}
