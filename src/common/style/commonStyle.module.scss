@@ -3,6 +3,7 @@
 
 .wrapper {
   @include flex(flex-start, stretch, column, 8px);
+  flex-basis: 100%;
 
   .input {
     width: 100%;
@@ -13,14 +14,13 @@
     }
   }
 
-  .errorInput {
-    border-color: red;
+  .errorField {
+    border: 1px solid red;
   }
 
   .select {
     max-width: 300px;
     width: 100%;
-    border: 1px solid red;
     border-radius: $borderRadius;
   }
 

@@ -5,7 +5,7 @@ type initialStateType = {
     step: number
 }
 const initialState: initialStateType = {
-    step: 0
+    step: 1
 }
 
 const stepsSlice = createSlice({

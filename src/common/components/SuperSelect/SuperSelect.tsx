@@ -14,13 +14,14 @@ export const SuperSelect: React.FC<SuperInputPropsType & FieldHookConfig<string>
     {label, size, formik, ...props}) => {
 
     const [field, meta] = useField(props)
+    const className = s.select + (meta.touched && meta.error ? ' ' + s.errorField : '')
     return (
         <div className={s.wrapper}>
             <label htmlFor={props.id}>{label}</label>
             <Select placeholder={'Не выбрано'}
                     onChange={(value) => formik.setFieldValue(field.name, value)}
                     size={size}
-                    className={s.select}
+                    className={className}
                     value={field.value}
                     bordered={true}
             >
