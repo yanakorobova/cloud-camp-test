@@ -5,6 +5,11 @@ import {SuperSelect} from "common/components/SuperSelect/SuperSelect";
 import {FormikProps} from "formik";
 import {DataFormType} from "redux/reducers/dataForm-slice";
 
+const selectOptions = [
+    {label: 'man', value: 'man'},
+    {label: 'woman', value: 'woman'}
+]
+
 type Step1PropsType = {
     formik: FormikProps<DataFormType>
 }
@@ -29,7 +34,7 @@ export const Step1: React.FC<Step1PropsType> = ({formik}) => {
             />
             <SuperInput
                 label={'Surname'}
-                name={"sername"}
+                name={"surname"}
                 id={'field-sername'}
                 style={style}
             />
@@ -40,8 +45,9 @@ export const Step1: React.FC<Step1PropsType> = ({formik}) => {
                 name={"sex"}
                 formik={formik}
             >
-                <Select.Option id={'field-sex-option-man'} value={'man'}>man</Select.Option>
-                <Select.Option id={'field-sex-option-woman'} value={'woman'}>woman</Select.Option>
+                {selectOptions.map((o) => (
+                    <Select.Option key={o.value} id={`field-sex-option-${o.label}`}
+                                   value={o.value}>{o.label}</Select.Option>))}
             </SuperSelect>
         </>
     );

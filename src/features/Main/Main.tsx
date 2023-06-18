@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import folder from '../../common/assets/folder.svg'
+import folder from 'common/assets/img/folder.svg'
 import {contactsData} from "features/Main/data";
 import {Avatar, Divider} from 'antd';
 import {SuperButton} from "common/components/SuperButton/SuperButton";
@@ -18,6 +18,12 @@ export const Main = () => {
         </a>
     )
     const redirect = () => navigate(PATH.CREATE)
+    const style = {
+        maxWidth: '400px',
+        background: 'rgba(0, 0, 0, 0.04)',
+        border: '1px solid rgba(0, 0, 0, 0.16)',
+        color: 'rgba(0, 0, 0, 0.48)'
+    }
     return (
         <div className={s.mainContainer}>
             <div className={s.info}>
@@ -32,7 +38,7 @@ export const Main = () => {
             <Divider/>
             <Formik
                 initialValues={{
-                    phone: '79043304066',
+                    phone: '+79043304066',
                     email: 'yanaheaven@yandex.ru',
                 }}
                 validationSchema={validateMain}
@@ -46,15 +52,14 @@ export const Main = () => {
                             label={'Phone'}
                             name={"phone"}
                             id={'field-phone'}
-                            disabled={true}
-                            style={{maxWidth: '400px'}}
+                            mask={'+7 (000) 000-00-00'}
+                            style={style}
                         />
                         <SuperInput
                             label={'Email'}
                             name={"email"}
                             id={'field-email'}
-                            disabled={true}
-                            style={{maxWidth: '400px'}}
+                            style={style}
                         />
                     </div>
                     <SuperButton id={'button-start'}

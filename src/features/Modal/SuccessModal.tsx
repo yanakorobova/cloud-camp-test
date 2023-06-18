@@ -1,7 +1,7 @@
 import React from 'react';
 import {SuperButton} from "common/components/SuperButton/SuperButton";
 import s from 'features/Modal/Modal.module.scss';
-import success from "common/assets/succcess.svg";
+import success from "common/assets/img/succcess.svg";
 import {useNavigate} from "react-router-dom";
 import {PATH} from "common/constants/path/path";
 import {resetData} from "redux/reducers/dataForm-slice";
@@ -21,7 +21,7 @@ export const SuccessModal: React.FC<SuccesModalPropsType> = ({onClose}) => {
     }
     return (
         <div className={s.wrapper}>
-            <p>Ошибка</p>
+            <p>Форма успешно отправлена</p>
             <img src={success} alt={'img'}/>
             <SuperButton id={'button-to-main'} onClick={redirectHandler}>На главную</SuperButton>
         </div>

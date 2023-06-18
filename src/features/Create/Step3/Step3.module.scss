@@ -1,10 +1,11 @@
 @import "src/common/style/mixins";
-
+@import "src/common/style/variables";
 .textWrapper {
   @include flex(flex-start, stretch, column, 8px);
 
   .textArea {
     min-height: 84px;
+    border-radius: $borderRadius;
   }
   .errorTextArea{
     border-color: red;

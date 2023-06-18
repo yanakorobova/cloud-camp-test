@@ -25,6 +25,7 @@ export const Step3: React.FC = () => {
                 placeholder="Placeholder"
                 className={className}
                 maxLength={200}
+                required
                 {...field}
             />
             <div className={s.info}>

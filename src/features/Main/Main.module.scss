@@ -3,26 +3,36 @@
 .mainContainer {
   padding: 24px;
   height: 704px;
-  @include container();
+  @include container;
   border-radius: 12px 12px 0 0;
 
   .info {
-    @include flex(flex-start, center,  $gap: 24px);
-    .avatar{
+    @include flex(flex-start, center, $gap: 24px);
+    @include mediaTabletMain{
+      @include flex(center, center, column, $gap: 24px);
+    }
+
+    .avatar {
       background: #D5E4F7;
       color: black;
       font-size: 40px;
     }
 
     .connection {
+      @include flex(center, stretch, column, 8px);
+      @include mediaTabletMain{
+        align-items: center;
+      }
       .name {
         font-weight: 600;
         font-size: 20px;
+        @include mediaTabletMain{
+          text-align: center;
+        }
       }
-      @include flex(center, stretch, column, 8px);
 
       .contacts {
-        @include flex(flex-start, stretch, $gap: 17px);
+        @include flex(flex-start, stretch, $gap: 17px, $wrap: wrap);
 
         & > a {
           text-decoration: none;
@@ -37,11 +47,13 @@
       }
     }
   }
-  .form{
-    .inputs{
+
+  .form {
+    .inputs {
       @include flex(flex-start, stretch, column, 24px);
     }
-    .button{
+
+    .button {
       margin-top: 48px;
     }
   }
