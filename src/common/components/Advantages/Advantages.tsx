@@ -22,7 +22,7 @@ export const Advantages: React.FC<AdvantagesPropsType> = ({name, fields, label})
                         {fields.map((advant, index) => (
                             <div key={index} className={s.input}>
                                 <SuperInput name={`${name}.${index}`}
-                                            id={`field-${name}-${index}`}
+                                            id={`field-advatages-${index}`}
                                             placeholder="Placeholder"
                                             style={{ maxWidth: '300px'}}
                                 />
