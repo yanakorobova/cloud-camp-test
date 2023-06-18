@@ -7,20 +7,24 @@ export type initialDataType = {
 }
 export type  DataFormType = {
     name: string
-    sername: string
+    surname: string
     nickname: string
     about: string
     checkbox: number[]
     sex: 'man' | 'woman' | null
+    advantages: string[],
+    radio: number | null
 }
 const initialState: initialDataType = {
     data: {
         name: '',
-        sername: '',
+        surname: '',
         nickname: '',
         about: '',
         checkbox: [],
-        sex: null
+        sex: null,
+        advantages: ['', '', ''],
+        radio: null
     },
     status: '',
 }
