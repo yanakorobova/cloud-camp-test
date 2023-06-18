@@ -1,0 +1,22 @@
+@import "../../style/mixins";
+
+.advantagesWrapper {
+
+  .listInputs {
+    margin-top: 8px;
+    @include flex(flex-start, flex-start, column, 8px);
+
+    .input {
+      width: 100%;
+      @include flex(flex-start, flex-start, $gap: 18.5px);
+
+      .removeButton {
+        height: 44px;
+        border: none;
+        background: none;
+        @include flex(center, center);
+        padding: 0;
+      }
+    }
+  }
+}
