@@ -17,12 +17,13 @@ export const ModalContainer: React.FC = () => {
     useEffect(() => {
         status && setShow(true)
     }, [status])
+
     return (
         <>
             <SuperButton id={'button-send'} type={"submit"}>Отправить</SuperButton>
             <Modal
                 enableBackground={true}
-                width={460}
+                maxWidth={460}
                 height={312}
                 show={show}
             >

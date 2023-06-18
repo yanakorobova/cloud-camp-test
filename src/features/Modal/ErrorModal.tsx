@@ -2,8 +2,8 @@ import React from 'react';
 import {SuperButton} from "common/components/SuperButton/SuperButton";
 import s from 'features/Modal/Modal.module.scss';
 import {Button} from "antd";
-import close from "common/assets/close.svg";
-import error from "common/assets/error.svg";
+import close from "common/assets/img/close.svg";
+import error from "common/assets/img/error.svg";
 
 type ErrorModalPropsType = {
     onClose: () => void
