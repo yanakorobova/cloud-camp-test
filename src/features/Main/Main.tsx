@@ -38,8 +38,8 @@ export const Main = () => {
             <Divider/>
             <Formik
                 initialValues={{
-                    phone: '+79043304066',
-                    email: 'yanaheaven@yandex.ru',
+                    phone: '+79999999999',
+                    email: 'asdasd@asd.ru',
                 }}
                 validationSchema={validateMain}
                 onSubmit={() => {

@@ -37,6 +37,7 @@ const dataFormSlice = createSlice({
             return initialState
         },
         setData: (state, action: PayloadAction<DataFormType>) => {
+            console.log(action,action.payload)
             state.data = action.payload
         }
     },
