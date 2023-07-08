@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cloud-camp-test/static/css/main.58ff8a66.css",
-    "main.js": "/cloud-camp-test/static/js/main.41296607.js",
+    "main.js": "/cloud-camp-test/static/js/main.7952acf5.js",
     "static/js/787.94c11712.chunk.js": "/cloud-camp-test/static/js/787.94c11712.chunk.js",
     "static/media/SB-Sans-Interface.ttf": "/cloud-camp-test/static/media/SB-Sans-Interface.979c0df052de84707146.ttf",
     "static/media/error.svg": "/cloud-camp-test/static/media/error.c0e73bf13fcf055e49a15554e618f0db.svg",
@@ -12,11 +12,11 @@
     "index.html": "/cloud-camp-test/index.html",
     "static/media/check.svg": "/cloud-camp-test/static/media/check.448a16914b21c2064b81.svg",
     "main.58ff8a66.css.map": "/cloud-camp-test/static/css/main.58ff8a66.css.map",
-    "main.41296607.js.map": "/cloud-camp-test/static/js/main.41296607.js.map",
+    "main.7952acf5.js.map": "/cloud-camp-test/static/js/main.7952acf5.js.map",
     "787.94c11712.chunk.js.map": "/cloud-camp-test/static/js/787.94c11712.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58ff8a66.css",
-    "static/js/main.41296607.js"
+    "static/js/main.7952acf5.js"
   ]
 }
